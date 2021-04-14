@@ -32,6 +32,10 @@ body {
     color: #1BA098;
 }
 
+.txt2 {
+    color: #1BA098;
+}
+
 footer {
     background-color: #01345B;
     color: #DEB992;
@@ -47,6 +51,10 @@ p {
 a {
     text-decoration: none;
     color: antiquewhite;
+}
+
+.comp {
+    padding-left: 3rem;
 }
 
 .btn {
@@ -80,5 +88,8 @@ h1 {
     }
     h1 {
         padding: 2rem;
+    }
+    .txt2 {
+        display: none;
     }
 }

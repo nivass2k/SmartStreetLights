@@ -62,3 +62,9 @@ app.post("/", function(req, res) {
         });
     })
 })
+app.get("/About", function(req, res) {
+    res.sendFile(__dirname + "/about.html")
+})
+app.post("/About", function(req, res) {
+    res.redirect("/");
+})

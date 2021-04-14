@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="aboutstyles.css">
+</head>
+
+<body>
+
+    <div class=" p-5 mb-4 jumbotron rounded-3">
+        <div class="container  container-fluid py-5">
+            <h1 class="display-5 fw-bold">Smart Street Lights</h1>
+            <p class="col-md-8 fs-4">We through this project are trying to change the way street lights are functioning by reducing the usage of electricity and man power. We designed it in such a way that it only turns on during night. And also it would not be on the whole night
+                it will only switch on when there is a passenger or a pedestrian is going on the street!</p>
+            <form action="/About" method="post"><button class="btn btn-primary btn-lg" type="submit"><i class="fas fa-home"></i>&nbsp&nbsp Home</button></form>
+
+        </div>
+    </div>
+
+
+    <div class="components">
+        <div class="row r1">
+            <div id="nodeimg" class="col-md-6">
+                <img src="/images/thingspeak.png" class="ldr">
+
+            </div>
+            <div id="nodetxt" class=" col-md-6 ">
+                <br>
+                <a href="https://www.google.com ">
+                    <h1>ThingSpeak</h1>
+                </a>
+                <br>
+                <h4>We used ThingSpeak as our cloud to store,update and control the street lights. We also plotted the stored data to graphs using Matlab functionality.</h4>
+            </div>
+        </div>
+
+        <div class="row r2">
+            <div class="comp col-md-6 ">
+                <br>
+                <div></div>
+                <a id="nodeimg2">
+                    <h1>NodeMCU ESP8266</h1>
+                </a>
+                <div id="nodetxt2">
+
+                    <h4>NodeMCU is a low cost WiFi module we used in our prototype to establish connection to the internet.
+                    </h4>
+                </div>
+
+
+            </div>
+            <div class="col-md-6 ">
+                <img src="/images/nodemcu.png " class="nodemcu ">
+
+            </div>
+        </div>
+        <div class="row r1">
+            <div id="nodeimg" class="col-md-6">
+                <img src="/images/ldr.png" class="ldr">
+
+            </div>
+            <div id="nodetxt" class=" col-md-6 ">
+                <br>
+                <a href="https://www.google.com ">
+                    <h1>LDR Sensor</h1>
+                </a>
+                <br>
+                <h4>We used LDR sensor to detect whether it is day or night. It generates variable resistance according to the photons it absorbs until a threshold limit.</h4>
+            </div>
+        </div>
+
+
+        <div class="row r2">
+            <div class="col-md-6 ">
+                <br>
+                <div></div>
+                <a id="nodeimg2">
+                    <h1>Infrared Sensor</h1>
+                </a>
+                <div id="nodetxt2">
+                    <h4>NodeMCU is a low cost WiFi module we used in our prototype to establish connection to the internet.</h4>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <img src="/images/ir.png " class="nodemcu ">
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer ">
+        <p> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nivass2k/">Lakshmi
+                Srinivas</a> | <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/p-e-abhishek-david-9286a3209/">Abishek David</a> |
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nivass2k/">Manish Kumar</a>
+        </p>
+        <a href="https://github.com/nivass2k/SmartStreetLights" target="_blank" rel="noopener noreferrer"><img width="30" height="30" src="/github-logo.png"></a>
+
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous ">
+</script>
+
+</html>

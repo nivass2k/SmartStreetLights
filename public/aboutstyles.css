@@ -1,0 +1,143 @@
+    .jumbotron {
+        background-image: url("images/jumbo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+        color: azure;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    body {
+        background-color: #051622;
+        font-family: "Montserrat";
+    }
+    
+    .nodemcu {
+        max-width: 50%;
+        clear: right;
+    }
+    
+    .ldr {
+        max-width: 50%;
+        float: right;
+    }
+    
+    .r1 {
+        background-color: #C3E0E5;
+    }
+    
+    .row {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 6rem;
+        margin-right: 0;
+        margin-top: 0;
+        padding-right: 6rem;
+        color: #deb992;
+    }
+    
+    h1 {
+        color: #1ba098;
+    }
+    
+    .btn {
+        background-color: #1ba098;
+    }
+    
+    #nodetxt {
+        visibility: hidden;
+        color: #01345B;
+    }
+    
+    #nodeimg {
+        display: inline;
+    }
+    
+    #nodetxt2 {
+        visibility: hidden;
+    }
+    
+    #nodeimg2 {
+        display: inline;
+    }
+    
+    #nodeimg2:hover~#nodetxt2 {
+        visibility: visible;
+    }
+    
+    #nodeimg:hover+#nodetxt {
+        visibility: visible;
+        animation: fadeIn linear 2s;
+        -webkit-animation: fadeIn linear 2s;
+        -moz-animation: fadeIn linear 2s;
+        -o-animation: fadeIn linear 2s;
+        -ms-animation: fadeIn linear 2s;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-o-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-ms-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    footer {
+        background-color: #01345B;
+        color: #DEB992;
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    
+    a {
+        text-decoration: none;
+        color: antiquewhite;
+    }
+    
+    @media(max-width:800px) {
+        #nodetxt,
+        #nodetxt2 {
+            visibility: visible;
+        }
+    }
