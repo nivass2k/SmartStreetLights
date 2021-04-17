@@ -24,11 +24,11 @@ app.get("/", function(req, res) {
             console.log("in");
             console.log(lightStatus);
             if (lightStatus === '1') {
-                res.render("\TurnOn", {
+                res.render("\index", {
                     Statusvar: 'Off'
                 });
             } else {
-                res.render("\TurnOn", {
+                res.render("\index", {
                     Statusvar: 'On'
                 });
             }
@@ -47,14 +47,12 @@ app.post("/", function(req, res) {
             var lightStatus = TotalData.feeds[0].field5;
             if (lightStatus === '1') {
                 client.updateChannel(1328778, { field5: 0, field6: 0, field7: 0 });
-                console.log("p1");
-                res.render("\TurnOn", {
+                res.render("\index", {
                     Statusvar: 'On'
                 });
             } else {
                 client.updateChannel(1328778, { field5: 1, field6: 1, field7: 1 });
-                console.log("p12");
-                res.render("\TurnOn", {
+                res.render("\index", {
                     Statusvar: 'Off'
                 });
             }

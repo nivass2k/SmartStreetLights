@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
         <nav class="navbar navbar-custom navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="/logo.png" alt="" width="30" height="24">
+                    <img src="logos/logo.png" alt="" width="30" height="24">
                     <span class="txt">Smart Street Lights</span>
                 </a>
                 <a href="/About">
@@ -30,7 +30,7 @@
         </nav>
         <br>
 
-        <div class="row">
+        <div class="row header">
             <div class="col-md-6">
                 <h1>Our Street Lights are turned
                     <% if(Statusvar==="On" ){%>
@@ -53,30 +53,26 @@
                             <br><br>
                         </div>
             </div>
+
             <div class="col-md-6">
-                <img class="img_street" src="/street_light.png" alt="street light">
+                <img class="img_street" src="logos/street_light.png" alt="street light">
             </div>
         </div>
+    </div>
+    <div class="graphs row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <iframe class="graph" width="400" height="260" src="https://thingspeak.com/channels/1328778/charts/5?bgcolor=%23051622&color=%23282846&dynamic=true&results=60&title=Street+Light+1&type=line"></iframe>
 
+        </div>
+        <div class="col">
+            <iframe class="graph" width="400" height="260" src="https://thingspeak.com/channels/1328778/charts/6?bgcolor=%23051622&color=%23b4aee8&dynamic=true&results=60&title=Street+Light+2&type=line"></iframe>
 
+        </div>
+        <div class="col">
+            <iframe class="graph" width="400" height="260" src="https://thingspeak.com/channels/1328778/charts/7?bgcolor=%23051622&color=%23693c72&dynamic=true&results=60&title=Street+LIght+3&type=line"></iframe>
 
-
-
-
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <iframe class="graph" width="400" height="260" src="https://thingspeak.com/channels/1328778/charts/5?bgcolor=%23051622&color=%23282846&dynamic=true&results=60&title=Street+Light+1&type=line"></iframe>
-
-            </div>
-            <div class="col" class="graph">
-                <iframe width="400" height="260" src="https://thingspeak.com/channels/1328778/charts/6?bgcolor=%23051622&color=%23b4aee8&dynamic=true&results=60&title=Street+Light+2&type=line"></iframe>
-
-            </div>
-            <div class="col">
-                <iframe width="400" height="260" src="https://thingspeak.com/channels/1328778/charts/7?bgcolor=%23051622&color=%23693c72&dynamic=true&results=60&title=Street+LIght+3&type=line" class="graph"></iframe>
-
-            </div>
-            <!-- <div class="col">
+        </div>
+        <!-- <div class="col">
                 <iframe width="450" height="260" src="https://thingspeak.com/channels/1328778/charts/2?bgcolor=%23e9896a&color=%23ffcccc&dynamic=true&results=60&title=IR+Sensor+1&type=line"></iframe>
             </div>
             <div class="col">
@@ -89,7 +85,7 @@
             <div class="col">
                 <iframe width="450" height="260" src="https://thingspeak.com/channels/1328778/charts/1?bgcolor=%23e9896a&color=%239494b8&dynamic=true&results=60&title=LDR+Sensor&type=line"></iframe>
             </div> -->
-        </div>
+    </div>
     </div>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -131,10 +127,10 @@
     </div>
     <footer id="footer ">
         <p> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nivass2k/">Lakshmi
-                Srinivas</a> | <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/p-e-abhishek-david-9286a3209/">Abishek David</a> |
+                Srinivas</a> | <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/p-e-abhishek-david-9286a3209/">Abhishek David</a> |
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nivass2k/">Manish Kumar</a>
         </p>
-        <a href="https://github.com/nivass2k/SmartStreetLights" target="_blank" rel="noopener noreferrer"><img width="30" height="30" src="/github-logo.png"></a>
+        <a href="https://github.com/nivass2k/SmartStreetLights" target="_blank" rel="noopener noreferrer"><img width="30" height="30" src="logos/github-logo.png"></a>
 
     </footer>
     </div>

@@ -62,11 +62,21 @@
     }
     
     #nodeimg2 {
-        display: inline;
+        visibility: visible;
     }
     
-    #nodeimg2:hover~#nodetxt2 {
+    .description,
+    .btn {
+        margin-left: 3.5rem;
+    }
+    
+    #nodeimg2:hover #nodetxt2 {
         visibility: visible;
+        animation: fadeIn linear 2s;
+        -webkit-animation: fadeIn linear 2s;
+        -moz-animation: fadeIn linear 2s;
+        -o-animation: fadeIn linear 2s;
+        -ms-animation: fadeIn linear 2s;
     }
     
     #nodeimg:hover+#nodetxt {
@@ -139,5 +149,9 @@
         #nodetxt,
         #nodetxt2 {
             visibility: visible;
+        }
+        .description,
+        .btn {
+            margin-left: 0rem;
         }
     }
