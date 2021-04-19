@@ -1,117 +1,142 @@
-    body {
-        background-color: #051622;
-        font-family: "Montserrat";
-        margin-right: 0;
-        padding-right: 0;
-    }
-    
-    .navbar-custom {
-        background-image: linear-gradient(#051622, #051622, #051822);
-        padding-top: 1rem;
-        padding-left: 4rem;
-    }
-    
-    .header {
-        padding-bottom: 3rem;
-    }
-    
-    .carousel-image {
-        width: 60%;
-        height: 60%;
-        object-fit: contain;
-    }
-    
-    .carousel-item {
-        height: 30rem;
-        max-height: 80%;
-        max-width: 35 5;
-        padding-top: 4rem;
-    }
-    
+body {
+    background-color: #051622;
+    font-family: "Montserrat";
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.navbar-custom {
+    padding-top: 1rem;
+    padding-left: 4rem;
+}
+
+.header {
+    padding-bottom: 3rem;
+}
+
+.description {
+    font-variant: small-caps;
+    letter-spacing: 5px;
+}
+
+.carousel-image {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+#whiteLogo {
+    padding-left: 4rem;
+}
+
+.carousel-item {
+    height: 30rem;
+    max-height: 80%;
+    max-width: 35 5;
+    padding-top: 4rem;
+}
+
+.img_street {
+    float: right;
+}
+
+.txt {
+    color: #1ba098;
+    letter-spacing: 5px;
+}
+
+.txt2 {
+    color: #1ba098;
+    letter-spacing: 5px;
+}
+
+#homeLogo {
+    padding-right: 10rem;
+}
+
+.graph {
+    padding-top: 3rem;
+    padding-right: 0%;
+    margin-bottom: 5rem;
+    padding-bottom: zrem;
+}
+
+.col {
+    padding: 0%;
+    margin: 0%;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+footer {
+    background-color: #01345b;
+    color: #deb992;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+p {
+    font-family: Helvetica;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.btn {
+    padding: 2% 4%;
+    margin-top: 5%;
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: #1ba098;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: center;
+    padding: 4rem;
+    color: #deb992;
+}
+
+.graphs {
+    background-color: #c3e0e5;
+}
+
+@media (max-width: 800px) {
     .img_street {
-        float: right;
+        display: none;
     }
-    
-    .txt {
-        color: #1BA098;
+    iframe {
+        height: 150%;
+        /* width: 105%; */
     }
-    
+    h1 {
+        line-height: 1;
+        padding: 2rem;
+        letter-spacing: 0.5;
+    }
     .txt2 {
-        color: #1BA098;
-        padding-right: 9rem;
+        display: none;
     }
-    
     .graph {
-        padding-top: 3rem;
-        margin: 2rem 0rem 3rem 2.5rem;
-        padding-right: 0%;
-    }
-    
-    .col {
-        padding: 0%;
         margin: 0%;
     }
-    
-    .row {
-        --bs-gutter-x: 0rem;
+    #homeLogo {
+        padding-right: 0rem;
     }
-    
-    footer {
-        background-color: #01345B;
-        color: #DEB992;
-        text-align: center;
-        padding: 3rem 2rem;
+    #whiteLogo {
+        padding-left: 0rem;
     }
-    
-    p {
-        font-family: Helvetica;
-        color: white;
+    .txt {
+        letter-spacing: 0px;
     }
-    
-    a {
-        text-decoration: none;
-        color: antiquewhite;
+    .navbar-custom {
+        padding-left: 0%;
     }
-    
-    .btn {
-        padding: 2% 4%;
-        margin-top: 5%;
-        font-size: 2rem;
-        border-radius: 2rem;
-        background-color: #1BA098;
-    }
-    
-    h1 {
-        font-size: 4rem;
-        line-height: 1.5;
-        text-align: center;
-        padding: 4rem;
-        color: #DEB992;
-    }
-    
-    .graphs {
-        background-color: #C3E0E5;
-    }
-    /* .contain {
-        padding-left: 5rem;
-    } */
-    
-    @media(max-width: 800px) {
-        .img_street {
-            display: none;
-        }
-        iframe {
-            max-width: 400vh;
-            width: 400;
-            margin-top: 2rem;
-        }
-        h1 {
-            padding: 2rem;
-        }
-        .txt2 {
-            display: none;
-        }
-        .graph {
-            margin: 0%;
-        }
-    }
+}

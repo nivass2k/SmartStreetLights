@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="icon" href="/images/favicon.ico">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -15,24 +15,31 @@
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
     <div class="container">
         <nav class="navbar navbar-custom navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a id="whiteLogo" class="navbar-brand" href="#">
                     <img src="logos/logo.png" alt="" width="30" height="24">
-                    <span class="txt">Smart Street Lights</span>
+                    <span class="txt">SMART STREET LIGHTS</span>
                 </a>
                 <a href="/About">
-                    <i class="fas fa-home"></i>
-                    <span class="txt2">About Us</span>
+                    <span class="txt2">ABOUT US</span>
+                    <i id="homeLogo" class="fas fa-home"></i>
                 </a>
             </div>
         </nav>
         <br>
 
         <div class="row header">
-            <div class="col-md-6">
-                <h1>Our Street Lights are turned
+            <div class="col-md-6 description">
+                <h1>The Street Lights Are Switched
                     <% if(Statusvar==="On" ){%>
                         Off !
                 </h1>
@@ -61,15 +68,15 @@
     </div>
     <div class="graphs row row-cols-1 row-cols-md-3">
         <div class="col">
-            <iframe class="graph" width="400" height="260" src="https://thingspeak.com/channels/1328778/charts/5?bgcolor=%23051622&color=%23282846&dynamic=true&results=60&title=Street+Light+1&type=line"></iframe>
+            <iframe class="graph" width="100%" height="100%" src="https://thingspeak.com/channels/1328778/charts/5?bgcolor=%23c3e0e5&color=%23282846&dynamic=true&results=60&title=Street+Light+1&type=line"></iframe>
 
         </div>
         <div class="col">
-            <iframe class="graph" width="400" height="260" src="https://thingspeak.com/channels/1328778/charts/6?bgcolor=%23051622&color=%23b4aee8&dynamic=true&results=60&title=Street+Light+2&type=line"></iframe>
+            <iframe class="graph" width="100%" height="100%" src="https://thingspeak.com/channels/1328778/charts/6?bgcolor=%23c3e0e5&color=%23b4aee8&dynamic=true&results=60&title=Street+Light+2&type=line"></iframe>
 
         </div>
         <div class="col">
-            <iframe class="graph" width="400" height="260" src="https://thingspeak.com/channels/1328778/charts/7?bgcolor=%23051622&color=%23693c72&dynamic=true&results=60&title=Street+LIght+3&type=line"></iframe>
+            <iframe class="graph" width="100%" height="100%" src="https://thingspeak.com/channels/1328778/charts/7?bgcolor=%23c3e0e5&color=%23693c72&dynamic=true&results=60&title=Street+LIght+3&type=line"></iframe>
 
         </div>
         <!-- <div class="col">
