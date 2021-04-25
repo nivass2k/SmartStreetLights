@@ -126,6 +126,7 @@ h1 {
     }
     .graph {
         margin: 0%;
+        padding-bottom: 4rem;
     }
     #homeLogo {
         padding-right: 0rem;
