@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 var ThingSpeakClient = require("thingspeakclient");
 var client = new ThingSpeakClient();
@@ -11,8 +12,8 @@ app.set('view engine', 'ejs');
 
 app.listen(process.env.PORT || 3000);
 client.attachChannel(1328778, {
-    writeKey: "NPPJYBD8QI9737QE",
-    readKey: "UHZLQJ38DK4TE89R",
+    writeKey: process.env.WRITE_KEY,
+    readKey: process.env.READ_KEY,
 });
 app.get("/", function(req, res) {
 
@@ -21,8 +22,6 @@ app.get("/", function(req, res) {
         response.on("data", function(data) {
             var TotalData = JSON.parse(data);
             lightStatus = TotalData.feeds[0].field5;
-            console.log("in");
-            console.log(lightStatus);
             if (lightStatus === '1') {
                 res.render("\index", {
                     Statusvar: 'Off'
@@ -32,8 +31,6 @@ app.get("/", function(req, res) {
                     Statusvar: 'On'
                 });
             }
-            console.log("get : ");
-            console.log(lightStatus);
         });
     });
 });
