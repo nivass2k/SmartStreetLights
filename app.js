@@ -4,19 +4,15 @@ var ThingSpeakClient = require("thingspeakclient");
 var client = new ThingSpeakClient();
 var https = require("https");
 var lightStatus;
-
 const app = express();
-
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
-
 app.listen(process.env.PORT || 3000);
 client.attachChannel(1328778, {
     writeKey: process.env.WRITE_KEY,
     readKey: process.env.READ_KEY,
 });
 app.get("/", function(req, res) {
-
     const url = "https://api.thingspeak.com/channels/1328778/feeds.json?results=1";
     https.get(url, function(response) {
         response.on("data", function(data) {
@@ -36,7 +32,6 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
-
     const url = "https://api.thingspeak.com/channels/1328778/feeds.json?results=1";
     https.get(url, function(response) {
         response.on("data", function(data) {
